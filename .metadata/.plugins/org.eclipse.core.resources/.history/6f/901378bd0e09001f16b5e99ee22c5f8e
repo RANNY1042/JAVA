@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>BasicFilter.jsp</title>
+</head>
+<body>
+	<script>
+	function formSubmit(form,methodType){
+		if(methodType==1){
+			form.method = "get";
+			
+		}
+	}
+	</script>
+</body>
+</html>

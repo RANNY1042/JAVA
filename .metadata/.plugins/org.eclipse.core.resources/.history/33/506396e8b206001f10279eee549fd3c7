@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MultiFileUpload</title>
+<script>
+function validateForm(form){
+	if(form.title.value==""){
+		return false;
+	}
+	if(form.attachedFile.value==""){
+		alert("첨부 파일은 필수 입력입니다.");
+		return false;
+	}
+}
+</script>
+</head>
+<body>
+	<h3>멀티 파일 업로드(multiple 속성 추가)</h3>
+	<span style="color: red;">${errorMessage }</span>
+	<form name="fileForm" method="post" enctype="multipart/form-data"
+</body>
+</html>

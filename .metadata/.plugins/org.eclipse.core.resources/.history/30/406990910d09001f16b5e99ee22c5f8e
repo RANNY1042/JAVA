@@ -1,0 +1,7 @@
+package filter;
+
+import javax.xml.crypto.dsig.spec.XPathType.Filter;
+
+public class BasicFilter extends Filter {
+
+}

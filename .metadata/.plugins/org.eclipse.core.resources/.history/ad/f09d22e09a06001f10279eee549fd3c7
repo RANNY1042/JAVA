@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	function validateForm(form){
+		if(from.title.value ==""){
+			alert("제목을 입력하세요.");
+			form.title.focus();
+			return false;
+		}
+		if(form.oFile.value=""){
+			alert("첨부 파일은 필수 입력입니다.");
+		}
+	}
+
+</script>
+<meta charset="EUC-KR">
+<title>FileUpload</title>
+</head>
+<body>
+
+</body>
+</html>

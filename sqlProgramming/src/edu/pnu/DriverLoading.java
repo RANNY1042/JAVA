@@ -1,0 +1,20 @@
+package edu.pnu;
+
+public class DriverLoading {
+
+	public static void main(String[] args) {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			
+			System.out.println("Sucess to Loading");
+			
+		}catch(ClassNotFoundException e) {
+			System.out.println("Fail to Loading");
+			System.out.println(e.getMessage());
+		}
+	}
+}
+		
+	
+
+

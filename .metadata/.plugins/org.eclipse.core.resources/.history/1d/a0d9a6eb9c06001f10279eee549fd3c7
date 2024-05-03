@@ -1,0 +1,5 @@
+package fileupload.copy;
+
+public class MyFileDTO {
+
+}

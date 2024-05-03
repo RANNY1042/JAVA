@@ -1,0 +1,10 @@
+package edu.pnu.servlet;
+
+import jakarta.servlet.http.HttpServlet;
+
+public class MyServlet04 extends HttpServlet {
+	@Override
+	private static final long serialVersionUID= 1L;
+	
+	protected void 
+}

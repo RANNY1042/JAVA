@@ -1,0 +1,9 @@
+package edu.pnu.servlet;
+
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+
+@WebServlet("/myservlet03")
+public class MyServlet03 extends HttpServlet {
+
+}

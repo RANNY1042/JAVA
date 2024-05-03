@@ -1,0 +1,8 @@
+package filter;
+
+
+
+public class BasicFilter extends Filter {
+	
+
+}

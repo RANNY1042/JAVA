@@ -1,0 +1,35 @@
+package edu.pnu.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+@WebServlet("/musthave")
+public class musthave extends HttpServlet {
+
+	private static final long serialVersionUID=1L;
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException{
+		
+		System.out.println("musthave");
+		res.setContentType("text/html; charset=utf-8");
+		PrintWriter out = res.getWriter();
+		
+		req.setAttribute("resultValue", "<h4>member<h4>");
+		req.setAttribute("resultValue", "<h4>board<h4>");
+		
+		String table=req.getParameter("table");
+
+		if(table.equals("member")){
+			req.getRequestDispatcher("/member.jsp");
+			
+		}else {
+			req.getRequestDispatcher("/board.jsp");
+		}
+	}
+}

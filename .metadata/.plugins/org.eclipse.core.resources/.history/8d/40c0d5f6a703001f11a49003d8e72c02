@@ -1,0 +1,21 @@
+package servlet;
+
+import java.sql.DriverManager;
+import jakarta.servlet.ServletContext;
+import jakarta.servlet.http.HttpServlet;
+
+public class MemberAuth extends HttpServlet{
+	private static final long serialVersionUID=1L;
+	
+	ServletContext application = this.getServletContext();
+	
+	String driver = application.getInitParameter("MySQLDriver");
+	String conndeturl = application.getInitParameter("MySQLURL");
+	String oid = application.getInitParameter("MySQLId");
+	String oPass = application.getInitParameter("MySQLPwd");
+	
+	dao=new MemberDAO(driver, connectUrl, oId, oPass);
+}
+
+@Override
+protected void service(HttpServletRequest req, HttpServletResponse resp)

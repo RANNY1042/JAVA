@@ -1,0 +1,15 @@
+package edu.pnu.servlet;
+
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+
+@WebServlet("/myservlet02")
+public class MyServlet02 extends HttpServlet {
+	private static final long serialVersionUID =1L;
+	
+@Override
+public void service(HttpServletRequest req, HttpServletResponse res) throws ServletException,IOException{
+	
+}
+
+}

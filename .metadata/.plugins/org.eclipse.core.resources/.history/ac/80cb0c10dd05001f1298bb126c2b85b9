@@ -1,0 +1,49 @@
+package edu.pnu.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+@WebServlet("/gugudan03")
+public class gugudan03 extends HttpServlet {
+	private static final long serialVersionUID= 1L;
+
+	@Override
+	public void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException{
+		System.out.println("gugudan02");
+		res.setContentType("text/html; charset=utf-8");
+		PrintWriter out = res.getWriter();
+
+		int dan=Integer.parseInt(req.getParameter("dan"));
+
+
+		out.print("<div style='display:flex'>");
+		for(int i=2;i<10;){
+			if(i%dan==2) {
+				out.print("<div>");}
+			for(int j=1;j<10;j++) {
+				out.println(i+"*"+j+"="+i*j+"\t"+"<br/>");
+				i++;
+				out.print("</div>");}
+
+			if(i%dan==1) {
+				out.print("<br />");
+
+			}
+
+		}
+
+	}
+
+}
+
+
+
+
+
+

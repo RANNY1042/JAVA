@@ -1,0 +1,7 @@
+package filter;
+
+import jakarta.servlet.Filter;
+
+public class AnnoFilter implements Filter {
+
+}
